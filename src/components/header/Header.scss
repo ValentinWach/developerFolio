@@ -25,6 +25,8 @@
   max-width: 100%;
   padding: 15px 20px;
   margin: 0px auto;
+  display: flex;
+  align-items: center;
 }
 
 .header ul {
@@ -56,12 +58,12 @@
   float: left;
   font-size: 1.5em;
   text-decoration: none;
-  margin-top: 10px;
   line-height: normal;
+  align-self: center;
 }
 
 .header .logo-name {
-  font-family: "Agustina Regular";
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
@@ -191,4 +193,36 @@
   .header {
     font-size: 12px;
   }
+}
+
+.vw-logo {
+  display: inline-block;
+  background: $darkBackground;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 1000;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  padding: 0.08em 0.28em 0.08em 0.28em;
+  border-radius: 0.25em;
+  vertical-align: middle;
+  position: relative;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+  align-self: center;
+}
+.vw-logo::before,
+.vw-logo::after {
+  color: #888;
+  font-size: 1.1em;
+  font-weight: 900;
+  font-family: inherit;
+}
+.vw-logo::before {
+  content: '{';
+  margin-right: 0.01em;
+}
+.vw-logo::after {
+  content: '}';
+  margin-left: 0.01em;
 }

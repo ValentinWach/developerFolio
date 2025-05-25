@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Valentin Wach",
-  title: "Hi all, I'm Valentin",
+  title: "Valentin Wach.",
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -224,7 +224,6 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
       image: require("./assets/images/ElectraLogoNoText.svg"),

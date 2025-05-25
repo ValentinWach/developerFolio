@@ -14,38 +14,24 @@ export default function Greeting() {
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
-        <div className="greeting-main">
+        <div className="greeting-main hero-centered">
           <div className="greeting-text-div">
             <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {greeting.title}{" "}
-              </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
-              <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
+              <div className="greeting-intro">
+                <span className="greeting-intro-accent">Hey there!, I'm–</span>
               </div>
+              <h1 className="greeting-name">
+                {greeting.title}
+                <span className="greeting-dot">.</span>
+              </h1>
+              <p className="greeting-role">
+                <b>Software Engineer.</b> <span className="greeting-subtitle">A self-taught developer with an interest in Computer Science.</span>
+              </p>
+              <div className="greeting-status">
+                <span role="img" aria-label="rocket">🚀</span> Currently specializing in Frontend (React / Next.js)<br />
+                <span role="img" aria-label="lightning">⚡</span> Frontend Engineer at <span className="greeting-link">Pabbl</span>
+              </div>
+              <SocialMedia />
             </div>
           </div>
           <div className="greeting-image-div">
