@@ -11,13 +11,15 @@
   height: 100vh;
   min-height: 100vh;
   min-width: 100vw;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   background: $darkBackground;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   overflow: hidden;
+  padding-top: 15vh;
 }
 
 .greeting-main {
@@ -33,7 +35,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   gap: 4vw;
@@ -72,7 +74,7 @@
   transition: box-shadow 0.3s;
 }
 .profile-image:hover {
-  box-shadow: 0 0 60px 10px $linkedin;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.35);
 }
 
 .greeting-intro {
@@ -80,8 +82,9 @@
   position: relative;
   display: inline-block;
 }
+
 .greeting-intro-accent {
-  color: $primaryGreen;
+  color: #32b048; //
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -112,12 +115,6 @@
   text-shadow: 0 6px 32px rgba(0,0,0,0.45);
   display: flex;
   align-items: flex-end;
-}
-.greeting-dot {
-  color: $linkedin;
-  font-size: 1.2em;
-  margin-left: 0.1em;
-  font-weight: 900;
 }
 
 .greeting-role {
@@ -274,6 +271,9 @@
     justify-content: center;
     width: 100%;
   }
+  .greet-main {
+    padding-top: 6vh;
+  }
 }
 @media (max-width: 768px) {
   .greeting-main {
@@ -314,9 +314,18 @@
   .greeting-intro-accent {
     font-size: 1.1rem;
   }
+  .greet-main {
+    padding-top: 3vh;
+  }
 }
 @media (max-width: 320px) {
   .main {
     width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .profile-image {
+    width: 400px;
+    height: 400px;
   }
 }
