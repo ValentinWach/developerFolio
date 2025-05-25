@@ -9,11 +9,11 @@ services:
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.youcandoit-frontend-${ENVIRONMENT}.rule=Host(`${DOMAIN}`)"
-      - "traefik.http.routers.youcandoit-frontend-${ENVIRONMENT}.entrypoints=websecure"
-      - "traefik.http.routers.youcandoit-frontend-${ENVIRONMENT}.tls=true"
-      - "traefik.http.routers.youcandoit-frontend-${ENVIRONMENT}.tls.certresolver=cloudflare"
-      - "traefik.http.routers.youcandoit-frontend-${ENVIRONMENT}.middlewares=auth-admin@docker"
+      - "traefik.http.routers.personal-website-frontend-${ENVIRONMENT}.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.personal-website-frontend-${ENVIRONMENT}.entrypoints=websecure"
+      - "traefik.http.routers.personal-website-frontend-${ENVIRONMENT}.tls=true"
+      - "traefik.http.routers.personal-website-frontend-${ENVIRONMENT}.tls.certresolver=cloudflare"
+      - "traefik.http.routers.personal-website-frontend-${ENVIRONMENT}.middlewares=auth-admin@docker"
     env_file:
       - .env
     networks:
