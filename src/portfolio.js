@@ -229,7 +229,7 @@ const bigProjects = {
       image: require("./assets/images/ElectraLogoNoText.svg"),
       projectName: "Electra",
       projectDesc: "• Developed as part of a university project in a two-person team, with my focus on backend development\n" +
-        "• Displays German federal election results such as seat distribution, vote shares, and more",
+        "• Displays German federal election results such as seat distribution, vote shares, and more.",
       footerLink: [
         {
           name: "Visit Website",
