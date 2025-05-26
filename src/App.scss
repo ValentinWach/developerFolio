@@ -53,3 +53,8 @@ code {
 .subTitle {
   color: $subTitle;
 }
+
+/* Offset for anchor scroll to prevent navbar overlap */
+#greeting, #education, #skills, #experience, #projects, #opensource, #achievements, #blogs, #talks, #impressum, #contact {
+  scroll-margin-top: 72px;
+}

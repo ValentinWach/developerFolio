@@ -18,13 +18,13 @@ export default function Impressum() {
                   : "heading impressum-heading"
               }
             >
-              Impressum
+              Impressum / Imprint
             </h1>
           </div>
           <div className="impressum-content">
             <div className={isDark ? "dark-mode impressum-card" : "impressum-card"}>
               <h2 className={isDark ? "dark-mode card-title" : "card-title"}>
-                Angaben gemäß § 5 TMG
+                Angaben gemäß § 5 TMG / Information pursuant to § 5 TMG
               </h2>
               <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
                 Valentin Wach<br />
@@ -33,7 +33,7 @@ export default function Impressum() {
               </p>
 
               <h2 className={isDark ? "dark-mode card-title" : "card-title"}>
-                Kontakt
+                Kontakt / Contact
               </h2>
               <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
                 E-Mail: contact@vwach.de

@@ -257,32 +257,21 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements and Certifications"),
+  title: emoji("Extracurricular Programs"),
   achievementsCards: [
-    {
-      title: "Win @ ETH Munich Hackathon 2023\n",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        }
-      ]
-    },
     {
       title: "Pre-Incubator program at TEG",
       subtitle:
-        "• Successful participation in the Pre-Incubator Program of The Entrepreneurial Group (TEG).\n" +
+        "• Successful participation in the Pre-Incubator Program of The Entrepreneurial Group (TEG)\n" +
         "• Activities: Independent development, refinement, and presentation of a business idea in small teams",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo"
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "Blockchain and DLT Course at VHB",
+      subtitle: "• Successful participation in the course “Technical Basics of Blockchain and Distributed Ledger Technologies” offered by the Virtual University of Bavaria (VHB)\n" + 
+      "• Course content: Cryptographic fundamentals, technical concepts of blockchain, smart contracts",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo"
     }

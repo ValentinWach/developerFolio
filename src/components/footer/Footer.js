@@ -12,7 +12,7 @@ export default function Footer() {
           <a
             href="/impressum"
           >
-            Impressum
+            Imprint/Impressum
           </a>
         </p>
       </div>
