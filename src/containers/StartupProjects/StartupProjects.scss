@@ -118,6 +118,23 @@
   }
   .project-image {
     width: 250px;
-    height: 250px;
+    height: 150px;
   }
+  .dark-mode .project-card,
+  .dark-mode.project-card,
+  .project-card-dark {
+    background-color: #171c28 !important;
+    color: #fff !important;
+  }
+  .dark-mode .project-card *,
+  .dark-mode.project-card *,
+  .project-card-dark * {
+    color: #fff !important;
+  }
+}
+
+.dark-mode.project-card,
+.project-card-dark {
+  background-color: $darkBackground !important;
+  color: $textColorDark !important;
 }

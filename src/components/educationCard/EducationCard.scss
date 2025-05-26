@@ -37,7 +37,6 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 27px;
 }
 
 .education-roundedimg {
@@ -97,7 +96,6 @@
   }
   .education-text-school {
     font-size: 20px;
-    height: 23px;
   }
   .education-text-duration {
     font-size: 16px;
@@ -130,5 +128,14 @@
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+  }
+  .education-text-subHeader,
+  .education-text-duration {
+    color: #fff !important;
+  }
+  .education-text-school {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow: visible !important;
   }
 }

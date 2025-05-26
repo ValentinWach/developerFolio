@@ -81,3 +81,14 @@
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 768px) {
+  .dark-mode .certificate-card,
+  .dark-mode.certificate-card {
+    background-color: #171c28 !important;
+    color: #fff !important;
+  }
+  .dark-mode .certificate-card *,
+  .dark-mode.certificate-card * {
+    color: #fff !important;
+  }
+}

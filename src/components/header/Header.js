@@ -23,6 +23,14 @@ function Header() {
   const viewEducation = educationInfo.display;
   const viewProjects = bigProjects.display;
 
+  // Menü schließt nach Klick auf Link
+  const handleMenuClick = () => {
+    const menuCheckbox = document.getElementById('menu-btn');
+    if (menuCheckbox && menuCheckbox.checked) {
+      menuCheckbox.checked = false;
+    }
+  };
+
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
@@ -40,42 +48,42 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewEducation && (
             <li>
-              <a href="#education">Education</a>
+              <a href="#education" onClick={handleMenuClick}>Education</a>
             </li>
           )}
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={handleMenuClick}>Skills</a>
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience" onClick={handleMenuClick}>Work Experiences</a>
             </li>
           )}
           {viewProjects && (
             <li>
-              <a href="#projects"> Projects</a>
+              <a href="#projects" onClick={handleMenuClick}> Projects</a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource" onClick={handleMenuClick}>Open Source</a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#programs" onClick={handleMenuClick}>Programs</a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs" onClick={handleMenuClick}>Blogs</a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks" onClick={handleMenuClick}>Talks</a>
             </li>
           )}
         </ul>

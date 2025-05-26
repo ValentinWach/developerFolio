@@ -185,4 +185,26 @@
   .experience-text-desc {
     font-size: 16px;
   }
+  
+  .dark-mode .experience-card {
+    background-color: #171c28 !important;
+  }
+
+  .dark-mode .experience-card-dark,
+  .experience-card-dark {
+    background-color: #171c28 !important;
+    color: #fff !important;
+  }
+  .dark-mode .experience-card-dark *,
+  .experience-card-dark * {
+    color: #fff !important;
+  }
+  .experience-text-details,
+  .experience-text-details * {
+    color: #fff !important;
+  }
+  .expand-button,
+  .expand-button.expanded {
+    color: #fff !important;
+  }
 }

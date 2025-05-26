@@ -20,6 +20,11 @@
   background-color: $buttonColor !important;
 }
 
+.dark-menu.header {
+  background-color: $darkBackground !important;
+  color: $textColorDark !important;
+}
+
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
@@ -192,6 +197,34 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dark-mode .header,
+  .dark-menu.header {
+    background-color: #171c28 !important;
+    color: #fff !important;
+  }
+  .dark-mode .header * {
+    color: #fff !important;
+  }
+  .header {
+    position: relative;
+  }
+  .header .menu-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    float: none;
+    padding: 0;
+    z-index: 100;
+  }
+  .header .menu-icon .navicon,
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #fff !important;
   }
 }
 
