@@ -226,26 +226,26 @@ const bigProjects = {
   title: "Projects",
   projects: [
     {
-      image: require("./assets/images/ElectraLogoNoText.svg"),
+      image: require("./assets/images/electraLogo.png"),
       projectName: "Electra",
-      projectDesc: "• Developed as part of a university project in a two-person team, with my focus on backend development\n" +
+      projectDesc: "• Developed in a two-person team, with my focus on backend development\n" +
         "• Displays German federal election results such as seat distribution, vote shares, and more",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Check it out",
           url: "https://electra.vwach.de/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/ultimateLogo.png"),
+      projectName: "Ultimate",
+      projectDesc: "• Winner of the ELTEMATE Challenge prize at the LegalTech Hackathon 2025\n" +
+        "• Allows users to upload rental contracts and receive feedback on invalid or uncommon clauses",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Check it out",
+          url: "http://ultimate.vwach.de/"
         }
       ]
     }
@@ -257,10 +257,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Achievements and Certifications "),
   achievementsCards: [
     {
       title: "Google Code-In Finalist",
