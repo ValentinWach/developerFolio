@@ -60,18 +60,22 @@
   color: $lightBackground3;
   vertical-align: middle;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 6px;
   display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
+  font-size: 1rem;
+  height: 2.5em;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
   margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  padding: 0 1.5em;
   cursor: pointer;
-  transition: 0.2s ease-in;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
-span.certificate-tag:hover {
-  background: $buttonHover;
+.certificate-card-footer span.certificate-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }

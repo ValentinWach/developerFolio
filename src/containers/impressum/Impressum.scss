@@ -1,0 +1,64 @@
+@import "../../_globalColor";
+
+.impressum-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.impressum-main-div {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.impressum-content {
+  margin-top: 2rem;
+}
+
+.impressum-card {
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  transition: all 0.3s ease;
+}
+
+.impressum-card:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+.dark-mode.impressum-card {
+  background-color: $darkBackground;
+  box-shadow: $darkBoxShadow 0px 10px 30px -15px;
+}
+
+.dark-mode.impressum-card:hover {
+  box-shadow: $darkBoxShadow 0px 20px 30px -10px;
+}
+
+.card-title {
+  color: $titleColor;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .impressum-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .impressum-main-div {
+    width: 95%;
+  }
+} 
