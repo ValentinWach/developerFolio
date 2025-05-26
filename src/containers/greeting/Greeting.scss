@@ -241,81 +241,99 @@
   }
 }
 @media (max-width: 900px) {
+  .greet-main {
+    height: auto;
+    min-height: auto;
+    padding-top: 0;
+  }
+
   .greeting-main.hero-centered {
     flex-direction: column;
-    height: 100vh;
-    justify-content: center;
+    height: auto;
+    min-height: auto;
+    justify-content: flex-start;
     align-items: center;
-    gap: 0;
+    gap: 2rem;
+    padding: 3rem 0;
   }
-  .greeting-text-div, .greeting-image-div {
+
+  .greeting-text-div {
+    padding: 0 1.5rem;
+    order: 2;
+    width: 100%;
+    align-items: center;
+  }
+
+  .greeting-image-div {
     padding: 0;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+    order: 1;
   }
+
   .profile-image {
-    width: 140px;
-    height: 140px;
-    margin-bottom: 2rem;
+    width: 280px;
+    height: 280px;
   }
+
   .greeting-name {
     font-size: 2.7rem;
     text-align: center;
   }
+
   .greeting-role, .greeting-status {
     text-align: center;
   }
+
   .greeting-intro {
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-  .greet-main {
-    padding-top: 6vh;
+    margin-bottom: 0.8rem;
   }
 }
 @media (max-width: 768px) {
-  .greeting-main {
-    flex-direction: column;
+  .greeting-main.hero-centered {
+    padding: 2.5rem 0;
+    gap: 1.5rem;
   }
-  .greeting-text-div {
-    order: 2;
-  }
-  .greeting-image-div {
-    order: 1;
-    margin-bottom: 2rem;
-  }
+
   .profile-image {
-    width: 200px;
-    height: 200px;
-    aspect-ratio: 1/1;
+    width: 260px;
+    height: 260px;
   }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
-  .button-greeting-div {
+
+  .greeting-name {
+    font-size: 2.5rem;
     justify-content: center;
+  }
+
+  .greeting-intro-accent {
+    font-size: 1.5rem;
+  }
+
+  .greeting-role {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 600px) {
+  .greeting-main.hero-centered {
+    padding: 2rem 0;
+  }
+
+  .profile-image {
+    width: 240px;
+    height: 240px;
+  }
+
   .greeting-name {
     font-size: 2.1rem;
   }
+
   .greeting-role {
     font-size: 1.1rem;
   }
+
   .greeting-intro-accent {
     font-size: 1.1rem;
-  }
-  .greet-main {
-    padding-top: 3vh;
   }
 }
 @media (max-width: 320px) {
@@ -329,3 +347,4 @@
     height: 400px;
   }
 }
+
